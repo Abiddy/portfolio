@@ -8,9 +8,9 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer and Entrepreneur. I love building things. It could be an extremely old websites redesign, a friends new car wash appointments platform, or an upcoming restaurants landing page -- if I can be part of a bigger change, I'm in.",
+    "Software Engineer and Entrepreneur specializing in full-stack web development and AI integration. I build meaningful, impactful solutions—from enterprise platforms to AI-powered applications—using React, Next.js, and modern backend technologies.",
   summary:
-    "In 2021, I started working as a web developer at my university, building accessibility tools for over 30,000 students. I then got a gig at a startup and was soon after promoted to a full time SWE role. I pursued a degree in computer engineering with a specialization in Web Development and Machine Learning. [I'm working on my next big AI project to help restaurants from underrepresented communites gain visibility and sustainablity!](www.food-light.com)",
+    "In 2021, I started working as a web developer at my university, building accessibility tools for over 30,000 students. I then got a gig at a startup and was soon after promoted to a full time SWE role. I pursued a degree in computer engineering with a specialization in Web Development and Machine Learning.",
   avatarUrl: "/profile.png",
   skills: [
     "React",
@@ -65,6 +65,30 @@ export const DATA = {
 
   work: [
     {
+      company: "Lensed",
+      href: "#",
+      badges: [],
+      location: "Remote, Los Angeles, CA",
+      title: "Lead Frontend Engineer",
+      logoUrl: "/lens.png",
+      start: "July 2025",
+      end: "Present",
+      description:
+        "Led complete frontend redesign of a chip verification application startup, transforming legacy UI into a modern interface using React, Tailwind CSS, and Zustand. Architected multi-screen workflow systems with seamless navigation and interactive visualizations.",
+    },
+    {
+      company: "Platter",
+      badges: [],
+      href: "#",
+      location: "Los Angeles, CA",
+      title: "Senior Founding Engineer",
+      logoUrl: "/platter.png",
+      start: "January 2024",
+      end: "Present",
+      description:
+        "Architected and developed secure distributed backend services using Node.js and Supabase, designing RESTful APIs handling 10,000+ concurrent requests. Built enterprise-grade AI integrations with GPT-3.5 and implemented CI/CD pipelines for high-availability deployments.",
+    },
+    {
       company: "Code Ninjas",
       href: "https://atomic.finance",
       badges: [],
@@ -75,18 +99,6 @@ export const DATA = {
       end: "Present",
       description:
         "Leading a dynamic team of coding instructors to create a collaborative and fun learning experience for students to learn block, javascript and unity coding - Initiated and hosted new coding competitions at the center, providing students with opportunities to showcase their creative games to parents",
-    },
-    {
-      company: "Foodlight",
-      badges: [],
-      href: "https://shopify.com",
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/foodLight.png",
-      start: "January 2024",
-      end: "Present",
-      description:
-        "Leading the development of an AI-powered menu optimization platform using OpenAI, Next.js, Supabase, and Clerk for user management - Aiming to increase menu visibility by 30% for underrepresented restaurants across the U.S. Received large support and positive feedback from restaurants in the United States and abroad",
     },
     {
       company: "Next Trucking",
@@ -125,6 +137,95 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Rizq Marketplace",
+      href: "https://www.rizqfreelance.com/",
+      dates: "2023 - Present",
+      active: true,
+      description:
+        "Built an entire end-to-end community-based freelancing marketplace. Developed a full-stack marketplace using React, Next.js, and TypeScript with responsive UI design principles and REST API integration. Engineered a multi-tenant secure authentication system with Google Cloud OAuth 2.0 workflows, JWT token management. Implemented scalable architecture following SDLC best practices including CI/CD pipelines and unit testing for front-end components.",
+      technologies: [
+        "React",
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "PostgreSQL",
+        "Google Cloud Console",
+        "TailwindCSS",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.rizqfreelance.com/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Abiddy/Rizq-Marketplace",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/rizq.mov",
+    },
+    {
+      title: "Tax Consultant Website",
+      href: "https://tax-consulatant-szvm.vercel.app/",
+      dates: "2024 - Present",
+      active: true,
+      description:
+        "Built a Next.js/Tailwind tax consultant website, with built-in SMTP setup that sends emails directly from clients. Features a clean contact form interface that allows clients to submit inquiries and receive automated email responses.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "TailwindCSS",
+        "SMTP",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://tax-consulatant-szvm.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Abiddy/tax-consulatant",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/tax consultant.mov",
+    },
+    {
+      title: "Onboarding Flow Application",
+      href: "https://onboarding-roan.vercel.app/",
+      dates: "2024 - Present",
+      active: true,
+      description:
+        "Built a step-by-step onboarding flow application with multi-step validation, progress tracking, and real-time data persistence. Implemented a comprehensive RESTful API using Next.js API routes for filter management with Supabase integration. Features form validation, database persistence, progress indicators, and reusable components built with TypeScript and Zod schema validation.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "Supabase",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Zod",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://onboarding-persuit.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Abiddy/onboarding",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "/onboarding application.mov",
+    },
+    {
       title: "FoodLight",
       href: "https://www.food-light.com",
       dates: "Jan 2024 - Present",
@@ -144,7 +245,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://www.food-light.com",
+          href: "https://foodlight-demo.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
@@ -180,39 +281,6 @@ export const DATA = {
       video: "/borjstar.mp4",
     },
     {
-      title: "Prayer Website Redesign",
-      href: "www.ictorrance.org",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://www.ictorrance.org/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/Abiddy/ictorrance",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "ict.mp4",
-    },
-    {
       title: "Car Wash Appointments Website",
       href: "https://www.robdetailing.com/",
       dates: "April 2023 - March 2024",
@@ -246,6 +314,39 @@ export const DATA = {
       video:
         "robs.mp4",
     },
+    {
+      title: "Prayer Website Redesign",
+      href: "www.ictorrance.org",
+      dates: "April 2023 - September 2023",
+      active: true,
+      description:
+        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+      technologies: [
+        "Next.js",
+        "Typescript",
+        "PostgreSQL",
+        "Prisma",
+        "TailwindCSS",
+        "Shadcn UI",
+        "Magic UI",
+        "Stripe",
+        "Cloudflare Workers",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://www.ictorrance.org/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Abiddy/ictorrance",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "ict.mp4",
+    }
   ],
   hackathons: [
     {
